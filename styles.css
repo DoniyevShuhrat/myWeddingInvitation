@@ -1,0 +1,189 @@
+body {
+    background-color: #4b1b61;
+    margin: 0;
+    padding: 0;
+
+    margin-top: 20px;
+    align-items: center;
+}
+
+.invitation {
+    background-color: #f3e9dc;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    /* max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.card {
+    position: relative;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.decorative-top,
+.decorative-bottom {
+    height: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.element {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.maps-block {
+    display:block;
+}
+.mapsDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.map-button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d60051;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.countdown {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.time {
+    margin: 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #A67A44;
+
+}
+
+.invite-text,
+.date,
+.note {
+    font-size: 1em;
+    color: #5a3d31;
+    text-align: center;
+}
+.note{
+    margin: none;
+}
+
+@font-face {
+    font-family: "1 Balmoral LET Plain1.0";
+    src: url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.eot");
+    /* IE9 Compat Modes */
+    src: url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.otf") format("opentype"),
+        /* Open Type Font */
+        url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.svg") format("svg"),
+        /* Legacy iOS */
+        url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.woff") format("woff"),
+        /* Modern Browsers */
+        url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.and {
+    font-size: 1.5em;
+    margin: 0;
+    color: #5a3d31;
+    text-align: center;
+}
+
+.family-names {
+
+    font-size: 1em;
+    font-weight: bold;
+    color: #A67A44;
+}
+
+/* Base styles for desktop */
+/* .highlight-text,  */
+.names {
+    font-family: "1 Balmoral LET Plain1.0";
+    /* font-size: 220%; */
+    font-size: 25px;
+    /* Base font size for larger screens */
+    font-weight: bold;
+    font-style: italic;
+    color: #A67A44;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.4em;
+    text-transform: capitalize;
+    margin: 12px 0;
+    text-align: center;
+}
+
+.highlight-text {
+    font-size: 1em;
+}
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+
+    .names,
+    .highlight-text {
+        font-size: 180%;
+        /* Slightly smaller font size for tablets */
+        margin: 10px 0;
+        /* Adjust margin for better spacing on smaller screens */
+        letter-spacing: 0.3em;
+        /* Slightly reduced letter spacing */
+    }
+}
+
+/* Small screens (e.g., mobile) */
+@media (max-width: 480px) {
+
+    .highlight-text {
+        font-size: 130%;
+        /* Smaller font size for mobile screens */
+        margin: 8px 0;
+        /* Adjust margin for tight spacing */
+        letter-spacing: 0.3em;
+        /* Further reduced letter spacing for readability */
+    }
+    .names {
+        font-size: 180%;
+        /* Smaller font size for mobile screens */
+        margin: 8px 0;
+        /* Adjust margin for tight spacing */
+        letter-spacing: 0.3em;
+        /* Further reduced letter spacing for readability */
+    }
+    .countdown{
+        margin: none;
+    }
+    .note{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .time{
+        margin: 0 5px;
+        font-size: 90%;
+    }
+}
